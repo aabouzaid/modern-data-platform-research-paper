@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: jmeter
+
+resources:
+- namespace.yaml
+- statefulset.yaml
+
+configMapGenerator:
+- name: jmeter-dremio-tpc-ds
+  files:
+  - ./files/DremioTestPlanTPC-DS.jmx
+  - ./files/DremioTestPlanTPC-DS-metadatarefresh.jmx
+  - ./files/runDremioBenchmark.sh
+  - ./files/promoteCSVtoPDS.sh
+  - ./files/tables_list.txt
+  

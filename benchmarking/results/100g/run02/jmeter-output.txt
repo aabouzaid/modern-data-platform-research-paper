@@ -1,0 +1,44 @@
+First Run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS-metadatarefresh.jmx
+Starting standalone test @ October 28, 2024 7:31:21 AM GMT (1730100681016)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary =     24 in 00:00:04 =    5.6/s Avg:   174 Min:    99 Max:  1619 Err:     0 (0.00%)
+Tidying up ...    @ October 28, 2024 7:31:25 AM GMT (1730100685737)
+... end of run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS.jmx
+Starting standalone test @ October 28, 2024 7:31:27 AM GMT (1730100687914)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      3 in 00:01:04 =    0.0/s Avg: 21386 Min:  4997 Max: 40023 Err:     1 (33.33%) Active: 1 Started: 1 Finished: 0
+summary +     19 in 00:03:03 =    0.1/s Avg:  9629 Min:   185 Max: 44468 Err:    12 (63.16%) Active: 1 Started: 1 Finished: 0
+summary =     22 in 00:04:07 =    0.1/s Avg: 11232 Min:   185 Max: 44468 Err:    13 (59.09%)
+summary +     19 in 00:02:57 =    0.1/s Avg:  9290 Min:   194 Max: 52948 Err:    12 (63.16%) Active: 1 Started: 1 Finished: 0
+summary =     41 in 00:07:04 =    0.1/s Avg: 10332 Min:   185 Max: 52948 Err:    25 (60.98%)
+summary +      5 in 00:00:33 =    0.2/s Avg:  6654 Min:   182 Max:  9776 Err:     1 (20.00%) Active: 1 Started: 1 Finished: 0
+summary =     46 in 00:07:37 =    0.1/s Avg:  9932 Min:   182 Max: 52948 Err:    26 (56.52%)
+summary +      3 in 00:00:25 =    0.1/s Avg:  8422 Min:   365 Max: 19170 Err:     1 (33.33%) Active: 1 Started: 1 Finished: 0
+summary =     49 in 00:08:02 =    0.1/s Avg:  9840 Min:   182 Max: 52948 Err:    27 (55.10%)
+summary +      4 in 00:00:33 =    0.1/s Avg:  8287 Min:   720 Max: 14352 Err:     2 (50.00%) Active: 1 Started: 1 Finished: 0
+summary =     53 in 00:08:35 =    0.1/s Avg:  9723 Min:   182 Max: 52948 Err:    29 (54.72%)
+summary +      3 in 00:00:23 =    0.1/s Avg:  7817 Min:   218 Max: 21334 Err:     2 (66.67%) Active: 0 Started: 1 Finished: 1
+summary =     56 in 00:08:59 =    0.1/s Avg:  9621 Min:   182 Max: 52948 Err:    31 (55.36%)
+Tidying up ...    @ October 28, 2024 7:40:27 AM GMT (1730101227290)
+... end of run
+Second Run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS.jmx
+Starting standalone test @ October 28, 2024 7:40:29 AM GMT (1730101229495)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +     14 in 00:01:34 =    0.1/s Avg:  6703 Min:    77 Max: 33688 Err:     8 (57.14%) Active: 1 Started: 1 Finished: 0
+summary +     27 in 00:03:59 =    0.1/s Avg:  8849 Min:    61 Max: 50784 Err:    18 (66.67%) Active: 1 Started: 1 Finished: 0
+summary =     41 in 00:05:33 =    0.1/s Avg:  8116 Min:    61 Max: 50784 Err:    26 (63.41%)
+summary +      5 in 00:00:29 =    0.2/s Avg:  5759 Min:    62 Max:  9251 Err:     1 (20.00%) Active: 1 Started: 1 Finished: 0
+summary =     46 in 00:06:02 =    0.1/s Avg:  7860 Min:    61 Max: 50784 Err:    27 (58.70%)
+summary +      4 in 00:00:33 =    0.1/s Avg:  8331 Min:    67 Max: 14954 Err:     1 (25.00%) Active: 1 Started: 1 Finished: 0
+summary =     50 in 00:06:35 =    0.1/s Avg:  7898 Min:    61 Max: 50784 Err:    28 (56.00%)
+summary +      6 in 00:00:09 =    0.7/s Avg:  1442 Min:    73 Max:  7221 Err:     6 (100.00%) Active: 0 Started: 1 Finished: 1
+summary =     56 in 00:06:44 =    0.1/s Avg:  7206 Min:    61 Max: 50784 Err:    34 (60.71%)
+Tidying up ...    @ October 28, 2024 7:47:13 AM GMT (1730101633609)
+... end of run
+Done

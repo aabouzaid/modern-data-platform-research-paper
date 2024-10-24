@@ -1,0 +1,37 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- ../../applications/argo-workflows
+- ../../applications/minio
+- ../../applications/dremio
+- ../../benchmarking/jmeter
+
+patches:
+# Increase the volume size.
+- path: ./patch/minio-volume.yaml
+  target:
+    kind: PersistentVolumeClaim
+    name: minio
+# Increase the resources.
+- path: ./patch/dremio-executor.yaml
+  target:
+    kind: StatefulSet
+    name: dremio-executor
+- path: ./patch/dremio-master.yaml
+  target:
+    kind: StatefulSet
+    name: dremio-master
+# The initContainer wait-for-zookeeper doesn't start on GCP Autopilot, so deleting it. 
+- target:
+    kind: StatefulSet
+    name: dremio-master
+  patch: |-
+    - op: remove
+      path: /spec/template/spec/initContainers/1
+- target:
+    kind: StatefulSet
+    name: dremio-executor
+  patch: |-
+    - op: remove
+      path: /spec/template/spec/initContainers/2

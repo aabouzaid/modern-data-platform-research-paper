@@ -1,0 +1,56 @@
+First Run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS-metadatarefresh.jmx
+Starting standalone test @ October 28, 2024 7:11:00 AM GMT (1730099460236)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:03 =    0.3/s Avg:  2788 Min:  2788 Max:  2788 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +     23 in 00:00:03 =    8.4/s Avg:   117 Min:   105 Max:   135 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     24 in 00:00:06 =    4.3/s Avg:   229 Min:   105 Max:  2788 Err:     0 (0.00%)
+Tidying up ...    @ October 28, 2024 7:11:06 AM GMT (1730099466369)
+... end of run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS.jmx
+Starting standalone test @ October 28, 2024 7:11:08 AM GMT (1730099468539)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:22 =    0.0/s Avg: 21691 Min: 21691 Max: 21691 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      3 in 00:01:01 =    0.0/s Avg: 20307 Min:  5125 Max: 46861 Err:     2 (66.67%) Active: 1 Started: 1 Finished: 0
+summary =      4 in 00:01:23 =    0.0/s Avg: 20653 Min:  5125 Max: 46861 Err:     2 (50.00%)
+summary +      5 in 00:00:33 =    0.2/s Avg:  6520 Min:   510 Max: 14095 Err:     3 (60.00%) Active: 1 Started: 1 Finished: 0
+summary =      9 in 00:01:55 =    0.1/s Avg: 12801 Min:   510 Max: 46861 Err:     5 (55.56%)
+summary +      5 in 00:00:29 =    0.2/s Avg:  5728 Min:   280 Max: 16177 Err:     3 (60.00%) Active: 1 Started: 1 Finished: 0
+summary =     14 in 00:02:24 =    0.1/s Avg: 10275 Min:   280 Max: 46861 Err:     8 (57.14%)
+summary +     22 in 00:03:58 =    0.1/s Avg: 10814 Min:   135 Max: 52697 Err:    15 (68.18%) Active: 1 Started: 1 Finished: 0
+summary =     36 in 00:06:22 =    0.1/s Avg: 10604 Min:   135 Max: 52697 Err:    23 (63.89%)
+summary +      5 in 00:00:33 =    0.2/s Avg:  6550 Min:   227 Max: 15296 Err:     3 (60.00%) Active: 1 Started: 1 Finished: 0
+summary =     41 in 00:06:55 =    0.1/s Avg: 10110 Min:   135 Max: 52697 Err:    26 (63.41%)
+summary +      5 in 00:00:31 =    0.2/s Avg:  6288 Min:   259 Max:  9493 Err:     1 (20.00%) Active: 1 Started: 1 Finished: 0
+summary =     46 in 00:07:26 =    0.1/s Avg:  9694 Min:   135 Max: 52697 Err:    27 (58.70%)
+summary +      3 in 00:00:26 =    0.1/s Avg:  8543 Min:   246 Max: 19874 Err:     1 (33.33%) Active: 1 Started: 1 Finished: 0
+summary =     49 in 00:07:52 =    0.1/s Avg:  9624 Min:   135 Max: 52697 Err:    28 (57.14%)
+summary +      4 in 00:00:33 =    0.1/s Avg:  8213 Min:   490 Max: 13719 Err:     2 (50.00%) Active: 1 Started: 1 Finished: 0
+summary =     53 in 00:08:25 =    0.1/s Avg:  9517 Min:   135 Max: 52697 Err:    30 (56.60%)
+summary +      3 in 00:00:23 =    0.1/s Avg:  7574 Min:   231 Max: 20651 Err:     2 (66.67%) Active: 0 Started: 1 Finished: 1
+summary =     56 in 00:08:47 =    0.1/s Avg:  9413 Min:   135 Max: 52697 Err:    32 (57.14%)
+Tidying up ...    @ October 28, 2024 7:19:56 AM GMT (1730099996302)
+... end of run
+Second Run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS.jmx
+Starting standalone test @ October 28, 2024 7:19:58 AM GMT (1730099998627)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:07 =    0.1/s Avg:  6677 Min:  6677 Max:  6677 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +     18 in 00:02:58 =    0.1/s Avg:  9883 Min:    75 Max: 42541 Err:    10 (55.56%) Active: 1 Started: 1 Finished: 0
+summary =     19 in 00:03:05 =    0.1/s Avg:  9715 Min:    75 Max: 42541 Err:    10 (52.63%)
+summary +      6 in 00:00:27 =    0.2/s Avg:  4520 Min:    68 Max: 14375 Err:     5 (83.33%) Active: 1 Started: 1 Finished: 0
+summary =     25 in 00:03:32 =    0.1/s Avg:  8468 Min:    68 Max: 42541 Err:    15 (60.00%)
+summary +      6 in 00:01:00 =    0.1/s Avg:  9918 Min:    71 Max: 51320 Err:     5 (83.33%) Active: 1 Started: 1 Finished: 0
+summary =     31 in 00:04:31 =    0.1/s Avg:  8749 Min:    68 Max: 51320 Err:    20 (64.52%)
+summary +     11 in 00:00:33 =    0.3/s Avg:  3023 Min:    56 Max: 14537 Err:     9 (81.82%) Active: 1 Started: 1 Finished: 0
+summary =     42 in 00:05:05 =    0.1/s Avg:  7249 Min:    56 Max: 51320 Err:    29 (69.05%)
+summary +      9 in 00:01:02 =    0.1/s Avg:  6864 Min:    75 Max: 14664 Err:     3 (33.33%) Active: 1 Started: 1 Finished: 0
+summary =     51 in 00:06:06 =    0.1/s Avg:  7181 Min:    56 Max: 51320 Err:    32 (62.75%)
+summary +      5 in 00:00:11 =    0.4/s Avg:  2245 Min:    63 Max:  7866 Err:     4 (80.00%) Active: 0 Started: 1 Finished: 1
+summary =     56 in 00:06:18 =    0.1/s Avg:  6740 Min:    56 Max: 51320 Err:    36 (64.29%)
+Tidying up ...    @ October 28, 2024 7:26:16 AM GMT (1730100376709)
+... end of run
+Done

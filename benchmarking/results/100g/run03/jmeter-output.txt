@@ -1,0 +1,48 @@
+First Run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS-metadatarefresh.jmx
+Starting standalone test @ October 28, 2024 7:59:12 AM GMT (1730102352169)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary =     24 in 00:00:04 =    5.7/s Avg:   171 Min:    88 Max:  1638 Err:     0 (0.00%)
+Tidying up ...    @ October 28, 2024 7:59:16 AM GMT (1730102356820)
+... end of run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS.jmx
+Starting standalone test @ October 28, 2024 7:59:18 AM GMT (1730102358955)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      4 in 00:01:14 =    0.1/s Avg: 18575 Min:  4975 Max: 39995 Err:     2 (50.00%) Active: 1 Started: 1 Finished: 0
+summary +      5 in 00:00:30 =    0.2/s Avg:  5978 Min:   195 Max: 18051 Err:     4 (80.00%) Active: 1 Started: 1 Finished: 0
+summary =      9 in 00:01:44 =    0.1/s Avg: 11577 Min:   195 Max: 39995 Err:     6 (66.67%)
+summary +      5 in 00:00:32 =    0.2/s Avg:  6310 Min:   248 Max: 18126 Err:     3 (60.00%) Active: 1 Started: 1 Finished: 0
+summary =     14 in 00:02:16 =    0.1/s Avg:  9696 Min:   195 Max: 39995 Err:     9 (64.29%)
+summary +      4 in 00:00:56 =    0.1/s Avg: 14069 Min:   226 Max: 41314 Err:     2 (50.00%) Active: 1 Started: 1 Finished: 0
+summary =     18 in 00:03:12 =    0.1/s Avg: 10667 Min:   195 Max: 41314 Err:    11 (61.11%)
+summary +     15 in 00:02:34 =    0.1/s Avg: 10245 Min:   182 Max: 52858 Err:    11 (73.33%) Active: 1 Started: 1 Finished: 0
+summary =     33 in 00:05:46 =    0.1/s Avg: 10475 Min:   182 Max: 52858 Err:    22 (66.67%)
+summary +      4 in 00:00:55 =    0.1/s Avg: 13705 Min:  4920 Max: 31791 Err:     1 (25.00%) Active: 1 Started: 1 Finished: 0
+summary =     37 in 00:06:41 =    0.1/s Avg: 10825 Min:   182 Max: 52858 Err:    23 (62.16%)
+summary +      5 in 00:00:32 =    0.2/s Avg:  6452 Min:   190 Max: 14330 Err:     3 (60.00%) Active: 1 Started: 1 Finished: 0
+summary =     42 in 00:07:13 =    0.1/s Avg: 10304 Min:   182 Max: 52858 Err:    26 (61.90%)
+summary +     14 in 00:01:48 =    0.1/s Avg:  7718 Min:   228 Max: 21381 Err:     6 (42.86%) Active: 0 Started: 1 Finished: 1
+summary =     56 in 00:09:01 =    0.1/s Avg:  9657 Min:   182 Max: 52858 Err:    32 (57.14%)
+Tidying up ...    @ October 28, 2024 8:08:20 AM GMT (1730102900393)
+... end of run
+Second Run
+Creating summariser <summary>
+Created the tree successfully using /mnt/test-plan/DremioTestPlanTPC-DS.jmx
+Starting standalone test @ October 28, 2024 8:08:22 AM GMT (1730102902615)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      2 in 00:00:40 =    0.1/s Avg: 19869 Min:  5148 Max: 34591 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      9 in 00:00:27 =    0.3/s Avg:  3016 Min:    75 Max: 15075 Err:     8 (88.89%) Active: 1 Started: 1 Finished: 0
+summary =     11 in 00:01:07 =    0.2/s Avg:  6080 Min:    75 Max: 34591 Err:     8 (72.73%)
+summary +     34 in 00:03:34 =    0.2/s Avg:  6281 Min:    49 Max: 54031 Err:    23 (67.65%) Active: 1 Started: 1 Finished: 0
+summary =     45 in 00:04:41 =    0.2/s Avg:  6232 Min:    49 Max: 54031 Err:    31 (68.89%)
+summary +      4 in 00:00:30 =    0.1/s Avg:  7596 Min:    78 Max: 15353 Err:     1 (25.00%) Active: 1 Started: 1 Finished: 0
+summary =     49 in 00:05:11 =    0.2/s Avg:  6343 Min:    49 Max: 54031 Err:    32 (65.31%)
+summary +      4 in 00:00:30 =    0.1/s Avg:  7589 Min:    95 Max: 14009 Err:     2 (50.00%) Active: 1 Started: 1 Finished: 0
+summary =     53 in 00:05:41 =    0.2/s Avg:  6437 Min:    49 Max: 54031 Err:    34 (64.15%)
+summary +      3 in 00:00:18 =    0.2/s Avg:  6123 Min:    72 Max: 16855 Err:     2 (66.67%) Active: 0 Started: 1 Finished: 1
+summary =     56 in 00:06:00 =    0.2/s Avg:  6420 Min:    49 Max: 54031 Err:    36 (64.29%)
+Tidying up ...    @ October 28, 2024 8:14:22 AM GMT (1730103262836)
+... end of run
+Done

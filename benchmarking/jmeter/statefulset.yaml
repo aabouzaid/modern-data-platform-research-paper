@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: jmeter
+spec:
+  serviceName: jmeter
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jmeter
+  template:
+    metadata:
+      labels:
+        app: jmeter
+    spec:
+      # Added GKE compute classes.
+      # https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-compute-classes
+      # nodeSelector:
+      #   cloud.google.com/compute-class: "Performance"
+      #   cloud.google.com/machine-family: "h3"
+      containers:
+      - name: jmeter
+        image: alpine/jmeter:5.5
+        env:
+        - name: DREMIO_JDBC_DRIVER_URL
+          value: "https://download.dremio.com/jdbc-driver/24.0.0-202302100528110223-3a169b7c/dremio-jdbc-driver-24.0.0-202302100528110223-3a169b7c.jar"
+        - name: MINIO_CLIENT_URL
+          value: "https://dl.min.io/client/mc/release/linux-amd64/mc"
+        command:
+        - 'sh'
+        - '-c'
+        - |
+          # Download Dremio JDBC driver.
+          curl ${DREMIO_JDBC_DRIVER_URL} --out lib/dremio-jdbc-driver.jar
+          # Download MinIO client.
+          curl ${MINIO_CLIENT_URL} --out /usr/local/bin/mc
+          chmod +x /usr/local/bin/mc
+          # Configure MinIO client.
+          mc alias set modern-data-platform http://minio.minio:9000 datalake datalake_poc
+          # Install deps.
+          apk add build-base jq vim
+          # Keep the Pod running to run the test manually via CLI.
+          tail -f /dev/null
+        resources:
+          requests:
+            cpu: 4
+            memory: 8Gi
+          limits:
+            cpu: 4
+            memory: 8Gi
+        volumeMounts:
+        - name: test-data
+          mountPath: /mnt/test-data
+        - name: test-plan
+          mountPath: /mnt/test-plan
+      volumes:
+        - name: test-plan
+          configMap:
+            name: jmeter-dremio-tpc-ds
+  volumeClaimTemplates:
+  - metadata:
+      name: test-data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 200Gi

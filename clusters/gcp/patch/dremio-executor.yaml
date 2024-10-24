@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: dremio-executor
+spec:
+  template:
+    spec:
+      # # Added GKE compute classes.
+      # # https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-compute-classes
+      # nodeSelector:
+      #   cloud.google.com/compute-class: "Performance"
+      #   cloud.google.com/machine-family: "h3"
+      containers:
+      - name: dremio-executor
+        # Increased resources for JMeter tests.
+        resources:
+          requests:
+            cpu: 4
+            memory: 8Gi
+          limits:
+            cpu: 4
+            memory: 8Gi
+  volumeClaimTemplates:
+  - metadata:
+      name: dremio-default-executor-volume
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 10Gi
+  - metadata:
+      name: dremio-default-executor-c3-0
+    spec:
+      # Use premium SSD persistent disks for JMeter tests.
+      storageClassName: premium-rwo
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          # Increased resources for JMeter tests.
+          storage: 50Gi

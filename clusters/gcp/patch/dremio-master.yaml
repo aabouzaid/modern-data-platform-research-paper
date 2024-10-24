@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: dremio-master
+spec:
+  template:
+    spec:
+      # # Added GKE compute classes.
+      # # https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-compute-classes
+      # nodeSelector:
+      #   cloud.google.com/compute-class: "Performance"
+      #   cloud.google.com/machine-family: "h3"
+      containers:
+      - name: dremio-master-coordinator
+        # Increased resources for JMeter tests.
+        resources:
+          requests:
+            cpu: 2
+            memory: 8Gi
+          limits:
+            cpu: 2
+            memory: 8Gi

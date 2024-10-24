@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minio
+spec:
+  # Increased resources for JMeter tests.
+  resources:
+    requests:
+      storage: 250Gi
+  # Use premium SSD persistent disks for JMeter tests.
+  storageClassName: premium-rwo
